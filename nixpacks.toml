@@ -1,0 +1,12 @@
+[build]
+builder = "python"
+
+[dependencies]
+python = "3.11"
+
+[deploy]
+target = "docker"
+
+[scripts]
+build = "python3 -m pip install -r requirements.txt"
+start = "python3 app.py"
